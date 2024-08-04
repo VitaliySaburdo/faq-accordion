@@ -1,9 +1,14 @@
 {
   "name": "faq-accordion",
   "source": "src/index.html",
+  "homepage": "https://VitaliySaburdo.github.io/faq-accordion",
   "scripts": {
     "start": "parcel src/*.html --open --port 3000",
     "build": "parcel build src/*.html --public-url /faq-accordion/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://VitaliySaburdo.github.io/faq-accordion.git"
   },
   "devDependencies": {
     "posthtml-include": "^2.0.1",
