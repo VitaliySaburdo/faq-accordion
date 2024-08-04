@@ -6,6 +6,32 @@ section {
   position: relative;
   z-index: 100;
   background-color: var(--white);
+  padding: 50px 40px 20px 40px;
+  border-radius: 20px;
   // width: 600px;
   // height: 570px;
+}
+
+.faq__header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.faq__title {
+  font-size: 40px;
+}
+
+.faq__question--container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq__item {
+  width: 520px;
+  border-bottom: 1px solid var(--grayish-purple);
+  &:last-child {
+    border-bottom: none;
+  }
 }
