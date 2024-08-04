@@ -1,0 +1,61 @@
+// Card-set
+@mixin card-set($card-gap: 20px) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $card-gap;
+}
+// Card item
+@mixin card-item($card-item: 1, $card-gap: 20px) {
+  flex-basis: calc((100% - #{$card-gap} * (#{$card-item} - 1)) / #{$card-item});
+}
+// Fonts
+@mixin fonts($fs, $fw) {
+  font-size: #{$fs}px;
+  font-weight: $fw;
+}
+// Section
+@mixin section($pt: 60px, $pb: 60px) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
+// Flex
+@mixin centered-flex() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+// Adaptive
+@mixin mq($range) {
+  $mob: 375px;
+  $desk: 1440px;
+
+  @if $range==mob {
+    @media screen and (min-width: $mob) {
+      @content;
+    }
+  }
+
+  @if $range==desk {
+    @media screen and (min-width: $desk) {
+      @content;
+    }
+  }
+
+  @if $range==noDesk {
+    @media (max-width:#{$desk - 0.02}) {
+      @content;
+    }
+  }
+
+  @if $range==mob-only {
+    @media (max-width:#{$tab - 0.02}) {
+      @content;
+    }
+  }
+}
+
+@mixin custom-transition($property) {
+  transition-property: $property;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

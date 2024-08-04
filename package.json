@@ -11,9 +11,13 @@
     "url": "git+https://VitaliySaburdo.github.io/faq-accordion.git"
   },
   "devDependencies": {
-    "posthtml-include": "^2.0.1",
+    "@parcel/transformer-sass": "^2.12.0",
     "parcel": "^2.12.0",
+    "posthtml-include": "^2.0.1",
     "sass": "^1.77.8"
   },
-  "browserslist": "> 0.5%, last 2 versions, not dead"
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "dependencies": {
+    "modern-normalize": "^2.0.0"
+  }
 }
