@@ -1,0 +1,11 @@
+section {
+  @include section(140, 140);
+}
+
+.faq__container {
+  position: relative;
+  z-index: 100;
+  background-color: var(--white);
+  // width: 600px;
+  // height: 570px;
+}

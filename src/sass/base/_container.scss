@@ -1,15 +1,14 @@
-.section__container {
+.container {
   width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
+  height: 820px;
   margin-left: auto;
   margin-right: auto;
+  @include centered-flex();
+  background-image: url(../assets/images/mob-bgi.jpg);
 
   @include mq(desk) {
     width: 1440px;
-    padding-left: 110px;
-    padding-right: 110px;
-    padding-top: 100px;
-    padding-bottom: 90px;
+    height: 900px;
+    background-image: url(../assets/images/desk-bgi.jpg);
   }
 }
