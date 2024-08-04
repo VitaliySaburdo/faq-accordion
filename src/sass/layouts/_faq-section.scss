@@ -47,7 +47,7 @@ section {
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--grayish-purple);
-  cursor: url('../assets/images/cursor-pointer-black.png'), pointer;
+  cursor: url('../assets/images/cursor-pointer-black.png') 0 0, pointer;
   &:last-child {
     border-bottom: none;
   }
