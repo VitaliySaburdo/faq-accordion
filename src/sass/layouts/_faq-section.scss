@@ -6,32 +6,67 @@ section {
   position: relative;
   z-index: 100;
   background-color: var(--white);
-  padding: 50px 40px 20px 40px;
+  padding: 30px 20px 10px 20px;
   border-radius: 20px;
-  // width: 600px;
-  // height: 570px;
+  @include mq(desk) {
+    padding: 50px 40px 20px 40px;
+  }
 }
 
 .faq__header {
   display: flex;
   align-items: center;
   gap: 25px;
+  margin-bottom: 10px;
+}
+
+.faq__logo {
+  @include mq(desk) {
+    width: 35px;
+    height: 35px;
+  }
 }
 
 .faq__title {
-  font-size: 40px;
+  font-size: 22px;
+  @include mq(desk) {
+    font-size: 40px;
+  }
 }
 
 .faq__question--container {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .faq__item {
-  width: 520px;
+  width: 275px;
+  height: 80px;
+  display: flex;
+  align-items: center;
   border-bottom: 1px solid var(--grayish-purple);
+  cursor: url('../assets/images/cursor-pointer-black.png'), pointer;
   &:last-child {
     border-bottom: none;
+  }
+  &:hover {
+    .faq__question {
+      color: var(--purple);
+    }
+  }
+  @include mq(desk) {
+    width: 520px;
+  }
+}
+.faq__question {
+  width: 200px;
+  font-size: 14px;
+  font-weight: 900;
+  @include custom-transition(color);
+  @include mq(desk) {
+    font-size: 18px;
+    width: 100%;
   }
 }
