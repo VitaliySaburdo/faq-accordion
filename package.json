@@ -1,0 +1,14 @@
+{
+  "name": "faq-accordion",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel src/*.html --open --port 3000",
+    "build": "parcel build src/*.html --public-url /faq-accordion/"
+  },
+  "devDependencies": {
+    "posthtml-include": "^2.0.1",
+    "parcel": "^2.12.0",
+    "sass": "^1.77.8"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
