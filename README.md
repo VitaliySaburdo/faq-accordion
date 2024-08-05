@@ -32,7 +32,7 @@ In this application, users have the opportunity:
 
 ![mouse control](./src/assets/images/screenshot_1.jpg)
 
-![keyboard control](./src/assets/images/screenshot_2.jpg)
+![keyboard control](./src/assets/images/screensot_2.png)
 
 ### Links
 
