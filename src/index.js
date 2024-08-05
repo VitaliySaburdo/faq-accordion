@@ -9,8 +9,8 @@ list.addEventListener('click', event => {
   const itemImg = selectedItem.querySelector('.faq__icon');
 
   itemImg.src = answer.classList.contains('show')
-    ? 'icon-plus.65996ed0.svg'
-    : 'icon-minus.19d080c8.svg';
+    ? './assets/images/icon-plus.svg'
+    : './assets/images/icon-minus.svg';
 
   answer.classList.toggle('show');
 
@@ -20,7 +20,7 @@ list.addEventListener('click', event => {
 
     if (item !== selectedItem) {
       itemAnswer.classList.remove('show');
-      itemImg.src = 'icon-plus.65996ed0.svg';
+      itemImg.src = './assets/images/icon-plus.svg';
     }
   });
 });
