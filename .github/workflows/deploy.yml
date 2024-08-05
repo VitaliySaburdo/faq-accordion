@@ -11,9 +11,22 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
 
-      - name: Install and Build 🔧
+      - name: Install Dependencies 🔧
         run: |
           npm ci
+
+      - name: Optimize CSS and JS 📦
+        run: |
+          npx postcss src/**/*.css -u cssnano -d src/
+          npx terser src/**/*.js -o src/
+
+      - name: Convert Images to WebP 🖼️
+        run: |
+          find src -type f -name "*.jpg" -exec cwebp {} -o {}.webp \;
+          find src -type f -name "*.png" -exec cwebp {} -o {}.webp \;
+
+      - name: Build Project 🏗️
+        run: |
           npm run build
 
       - name: Deploy 🚀
