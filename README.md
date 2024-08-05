@@ -1,7 +1,5 @@
 # FAQ accordion solution
 
-[FAQ accordion challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz).
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -30,9 +28,9 @@ In this application, users have the opportunity:
 
 ### Screenshot
 
-![mouse control](./src/assets/images/screenshot_1.jpg)
+- Mouse control: ![mouse control](./src/assets/images/screenshot_1.jpg)
 
-![keyboard control](./src/assets/images/screensot_2.png)
+- Keyboard control: ![keyboard control](./src/assets/images/screensot_2.png)
 
 ### Links
 
