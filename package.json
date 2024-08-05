@@ -24,6 +24,10 @@
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "dependencies": {
-    "modern-normalize": "^2.0.0"
+    "cssnano": "^7.0.4",
+    "modern-normalize": "^2.0.0",
+    "postcss-cli": "^11.0.0",
+    "terser": "^5.31.3",
+    "webp-converter": "^2.3.3"
   }
 }
