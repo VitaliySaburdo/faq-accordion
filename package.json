@@ -10,6 +10,12 @@
     "type": "git",
     "url": "git+https://VitaliySaburdo.github.io/faq-accordion.git"
   },
+  "keywords": [],
+  "author": "Saburdo Vitaliy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://VitaliySaburdo.github.io/faq-accordion/issues"
+  },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.12.0",
     "parcel": "^2.12.0",
