@@ -11,26 +11,9 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
 
-      - name: Install Dependencies 🔧
+      - name: Install and Build 🔧
         run: |
           npm ci
-          npm install cssnano postcss-cli terser webp-converter
-
-      - name: Optimize CSS 📦
-        run: |
-          npx postcss src/**/*.css --use cssnano --dir src/
-
-      - name: Minify JS 📦
-        run: |
-          find src -name "*.js" -exec npx terser {} --compress --mangle --output {} \;
-
-      - name: Convert Images to WebP 🖼️
-        run: |
-          find src -type f -name "*.jpg" -exec npx cwebp {} -o {}.webp \;
-          find src -type f -name "*.png" -exec npx cwebp {} -o {}.webp \;
-
-      - name: Build Project 🏗️
-        run: |
           npm run build
 
       - name: Deploy 🚀
