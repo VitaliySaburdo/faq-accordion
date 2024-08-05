@@ -22,6 +22,19 @@ In this application, users have the opportunity:
   size
 - See hover and focus states for all interactive elements on the page
 
+### Usage
+
+- Mouse
+
+When you click on a question item, the answer expands. If you click on another
+item, the previous item will close and the current one will open.
+
+-Keyboard
+
+When you press the "Tab" button, you select the current question item. The
+selection is made by "Enter". Navigation is carried out using the "up" and
+"down" buttons
+
 ### Screenshot
 
 - Mouse control: ![mouse control](./src/assets/images/screenshot_1.jpg)
