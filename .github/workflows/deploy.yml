@@ -16,15 +16,18 @@ jobs:
           npm ci
           npm install cssnano postcss-cli terser webp-converter
 
-      - name: Optimize CSS and JS 📦
+      - name: Optimize CSS 📦
         run: |
-          npx postcss src/**/*.css -u cssnano -o src/
-          npx terser src/**/*.js -o src/
+          npx postcss src/**/*.css --use cssnano --dir src/
+
+      - name: Minify JS 📦
+        run: |
+          find src -name "*.js" -exec npx terser {} --compress --mangle --output {} \;
 
       - name: Convert Images to WebP 🖼️
         run: |
-          find src -type f -name "*.jpg" -exec cwebp {} -o {}.webp \;
-          find src -type f -name "*.png" -exec cwebp {} -o {}.webp \;
+          find src -type f -name "*.jpg" -exec npx cwebp {} -o {}.webp \;
+          find src -type f -name "*.png" -exec npx cwebp {} -o {}.webp \;
 
       - name: Build Project 🏗️
         run: |
