@@ -4,6 +4,7 @@
 
 - [Overview](#overview)
   - [Description](#description)
+  - [Usage](#usage)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
