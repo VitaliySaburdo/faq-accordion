@@ -30,7 +30,7 @@ In this application, users have the opportunity:
 
 - Mouse control: ![mouse control](./src/assets/images/screenshot_1.jpg)
 
-- Keyboard control: ![keyboard control](./src/assets/images/screensot_2.png)
+- Keyboard control: ![keyboard control](./src/assets/images/screenshot_2.png)
 
 ### Links
 
