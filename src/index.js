@@ -4,15 +4,11 @@ import minusIcon from './assets/images/icon-minus.svg';
 const items = document.querySelectorAll('.faq__item');
 const list = document.querySelector('.faq__list');
 
-list.addEventListener('click', event => {
-  const selectedItem = event.target.closest('.faq__item');
-  if (!selectedItem) return;
-
+const toggleAnswer = selectedItem => {
   const answer = selectedItem.querySelector('.faq__answer');
   const itemImg = selectedItem.querySelector('.faq__icon');
 
   itemImg.src = answer.classList.contains('show') ? plusIcon : minusIcon;
-
   answer.classList.toggle('show');
 
   items.forEach(item => {
@@ -24,4 +20,38 @@ list.addEventListener('click', event => {
       itemImgInsideLoop.src = plusIcon;
     }
   });
+};
+
+list.addEventListener('click', event => {
+  const selectedItem = event.target.closest('.faq__item');
+  if (!selectedItem) return;
+  toggleAnswer(selectedItem);
+});
+
+list.addEventListener('keydown', event => {
+  const selectedItem = document.activeElement.closest('.faq__item');
+  if (!selectedItem) return;
+
+  switch (event.key) {
+    case 'Enter':
+    case ' ':
+      event.preventDefault();
+      toggleAnswer(selectedItem);
+      break;
+    case 'ArrowDown':
+      event.preventDefault();
+      const nextItem = selectedItem.nextElementSibling;
+      if (nextItem) nextItem.focus();
+      break;
+    case 'ArrowUp':
+      event.preventDefault();
+      const prevItem = selectedItem.previousElementSibling;
+      if (prevItem) prevItem.focus();
+      break;
+  }
+});
+
+items.forEach(item => {
+  item.setAttribute('tabindex', '0');
+  item.setAttribute('role', 'button');
 });
