@@ -30,7 +30,7 @@ In this application, users have the opportunity:
 When you click on a question item, the answer expands. If you click on another
 item, the previous item will close and the current one will open.
 
--Keyboard
+- Keyboard
 
 When you press the "Tab" button, you select the current question item. The
 selection is made by "Enter". Navigation is carried out using the "up" and
