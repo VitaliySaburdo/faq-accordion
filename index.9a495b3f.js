@@ -1,2 +1,0 @@
-const e=document.querySelectorAll(".faq__item");document.querySelector(".faq__list").addEventListener("click",s=>{let t=s.target.closest(".faq__item");if(!t)return;let c=t.querySelector(".faq__answer");t.querySelector(".faq__icon").src=c.classList.contains("show")?"icon-plus.65996ed0.svg":"icon-minus.19d080c8.svg",c.classList.toggle("show"),e.forEach(e=>{let s=e.querySelector(".faq__answer"),c=e.querySelector(".faq__icon");e!==t&&(s.classList.remove("show"),c.src="icon-plus.65996ed0.svg")})});
-//# sourceMappingURL=index.9a495b3f.js.map

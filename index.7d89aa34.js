@@ -1,0 +1,2 @@
+!function(){let e=document.querySelectorAll(".faq__item");document.querySelector(".faq__list").addEventListener("click",s=>{let t=s.target.closest(".faq__item");if(!t)return;let c=t.querySelector(".faq__answer");t.querySelector(".faq__icon").src=c.classList.contains("show")?"./assets/images/icon-plus.svg":"./assets/images/icon-minus.svg",c.classList.toggle("show"),e.forEach(e=>{let s=e.querySelector(".faq__answer"),c=e.querySelector(".faq__icon");e!==t&&(s.classList.remove("show"),c.src="./assets/images/icon-plus.svg")})})}();
+//# sourceMappingURL=index.7d89aa34.js.map
