@@ -1,6 +1,6 @@
 .container {
   width: 375px;
-  height: 820px;
+  height: 100vh;
   margin-left: auto;
   margin-right: auto;
   @include centered-flex();
@@ -14,7 +14,6 @@
 
   @include mq(desk) {
     width: 1440px;
-    height: 900px;
     background-image: url(../assets/images/background-pattern-desktop.svg);
   }
 }
