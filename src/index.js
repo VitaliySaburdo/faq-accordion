@@ -50,8 +50,3 @@ list.addEventListener('keydown', event => {
       break;
   }
 });
-
-items.forEach(item => {
-  item.setAttribute('tabindex', '0');
-  item.setAttribute('role', 'button');
-});
