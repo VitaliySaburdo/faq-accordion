@@ -1,5 +1,5 @@
 .container {
-  width: 375px;
+  flex: 1;
   height: 100vh;
   margin-left: auto;
   margin-right: auto;
@@ -9,11 +9,10 @@
   background-position: top;
   background-repeat: no-repeat;
   background-image: url(../assets/images/background-pattern-mobile.svg);
-
   background-color: var(--light-pink);
+  background-size: contain;
 
   @include mq(desk) {
-    width: 1440px;
     background-image: url(../assets/images/background-pattern-desktop.svg);
   }
 }
